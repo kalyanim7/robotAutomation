@@ -15,7 +15,6 @@ first test case
 	log to console   Start of the Test case
 	Selenium2Library.Open Browser  http://www.linuxacademy.com  firefox
 	Click Element  ${LOGIN}  
-#	Click Element  xpath:/html/body/div[3]/div[1]/div/div[2]/ul/li[4]/a
 	# Wait till the page is loaded.
 	sleep  10s
     	Input Text   username   ${USERNAME}
@@ -25,8 +24,9 @@ first test case
 	Click Element  ${CLOUDSERVERS}
 	sleep  5s
 	Click Button  refresh_timeout
+	sleep  5s
+	Close  Browser
 
-#	Click Element  xpath:/html/body/div[2]/header/div[2]/div/div/div/div/ul/li[3]/a
 	log to console   End of the Test case
 #/html/body/div[3]/div[1]/div/div[2]/ul/li[4]/a
 #/html/body/div[2]/header/div[2]/div/div/div/div/ul/li[3]/a
