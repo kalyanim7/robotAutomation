@@ -15,7 +15,8 @@ first test case
 	log to console   Start of the Test case
 	${ff options} =     Evaluate    sys.modules['selenium.webdriver'].FirefoxOptions()    sys, selenium.webdriver
 	Selenium2Library.Open Browser  http://www.linuxacademy.com  headlessfirefox
-	Click Element  ${LOGIN}  
+	#Click Element  ${LOGIN}
+	Click Link  Log In
 	# Wait till the page is loaded.
 	sleep  10s
     	Input Text   username   ${USERNAME}
